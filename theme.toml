@@ -8,7 +8,7 @@ description = "Minimal theme using the Ubuntu font."
 homepage = "https://gitlab.com/meibenny/elephants"
 tags = []
 features = []
-min_version = "0.31.1"
+min_version = "0.30.2"
 
 [author]
   name = "Benny Mei"
