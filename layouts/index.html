@@ -2,7 +2,7 @@
 
 <section id=content>
     <ul class=posts_listing>
-      {{ range .Data.Pages.ByPublishDate.Reverse }}
+      {{ range .Site.RegularPages.ByPublishDate.Reverse }}
         <div id="posts">
           <div id=date class="date-time-title">
               <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
