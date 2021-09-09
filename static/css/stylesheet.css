@@ -36,3 +36,9 @@ a {
 .blog-post {
     padding-left: 1em;
 }
+
+
+img, video {
+    max-width: 100%;
+    height: auto;
+  }
