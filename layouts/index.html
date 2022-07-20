@@ -4,7 +4,7 @@
     <ul class=posts_listing>
       {{ range .Site.RegularPages.ByPublishDate.Reverse }}
         <div id="posts">
-          <div id=date class="date-time-title">
+          <div id=date class="date-time-title date-time-font">
               <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
           </div>
           <div class="date-time-title post">

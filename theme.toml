@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/meibenny/elephants/blob/master/LICENSE.md"
 description = "Minimal theme using the Ubuntu font."
 homepage = "https://gitlab.com/meibenny/elephants"
-tags = ["blog"]
-features = ["blog"]
+tags = ["blog", "personal", "minimal"]
+features = ["blog", "personal", "minimal"]
 min_version = "0.57.2"
 
 [author]

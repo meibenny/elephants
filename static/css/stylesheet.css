@@ -25,6 +25,10 @@ a {
     display: inline-block;
 }
 
+.date-time-font {
+    font-family: 'Ubuntu Mono';
+}
+
 #posts {
     padding-left: 2em;
 }
