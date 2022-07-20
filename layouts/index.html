@@ -2,16 +2,18 @@
 
 <section id=content>
     <ul class=posts_listing>
-      {{ range .Site.RegularPages.ByPublishDate.Reverse }}
-        <div id="posts">
-          <div id=date class="date-time-title date-time-font">
-              <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
+      <div id="posts">
+        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+          <div class="post-conatiner">
+            <div class="date-time-title date-time-font">
+                <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
+            </div>
+            <div class="date-time-title post">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
           </div>
-          <div class="date-time-title post">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </div>
-        </div>
-      {{ end }}
+        {{ end }}
+      </div>
     </ul>
   </section>
 

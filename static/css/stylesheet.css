@@ -40,3 +40,22 @@ a {
 .blog-post {
     padding-left: 1em;
 }
+
+.post-container {
+    display: block;
+}
+
+.post-tags {
+    padding-left: 1em;
+}
+
+.post-tag-list {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.post-tag-list-item {
+    white-space: nowrap;
+    display: inline-block;
+}

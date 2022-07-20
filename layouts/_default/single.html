@@ -9,5 +9,16 @@
         {{ .Content }}
     </div>
 </section>
+{{ if .Params.Tags }}
+<section class="post-tags">
+  <hr>
+  Tags:
+  <ul class="post-tag-list">
+    {{ range (.GetTerms "tags") }}
+      <li class="post-tag-list-item"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a>;</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
 
 {{ partial "footer.html" . }}
