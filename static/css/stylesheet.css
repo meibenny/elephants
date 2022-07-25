@@ -21,10 +21,6 @@ a {
     text-decoration: underline;
 }
 
-.date-time-title {
-    display: inline-block;
-}
-
 .date-time-font {
     font-family: 'Ubuntu Mono';
 }
@@ -58,4 +54,8 @@ a {
 .post-tag-list-item {
     white-space: nowrap;
     display: inline-block;
+}
+
+.post-date-time {
+    white-space: nowrap;
 }

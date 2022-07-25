@@ -2,17 +2,19 @@
 
 <section id="content">
   <ul>
-    <div id="posts">
-      {{ range .Pages.ByPublishDate.Reverse }}
-        <div class="post-container">
- 	      <div class="date-time-title date-time-font">
-		    <time>{{ .Date.Format (.Site.Params.datefrom | default "Jan 02 2006") }}</time>
-          </div>
-          <div class="date-time-title post">
-		    <a href="{{ .Permalink }}">{{ .Title }}</a>
-		  </div>
-        </div>
+    <table>
+      {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+      <tr>
+        <td class="post-date-time date-time-font">
+          <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02 2006") }}</time>
+        </td>
+        <td class="post">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </td>
+      </tr>
       {{ end }}
-	</div>
+    </table>
   </ul>
 </section>
+
+{{ partial "footer.html" . }}
