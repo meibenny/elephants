@@ -35,6 +35,7 @@ a {
 
 .blog-post {
     padding-left: 1em;
+    padding-right: 1em;
 }
 
 .post-container {
@@ -43,6 +44,7 @@ a {
 
 .post-tags {
     padding-left: 1em;
+    padding-right: 1em;
 }
 
 .post-tag-list {
@@ -58,4 +60,8 @@ a {
 
 .post-date-time {
     white-space: nowrap;
+}
+
+.page-content {
+    margin: 1em;
 }
