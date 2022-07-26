@@ -2,7 +2,7 @@
 
 <section id="content" class="page-content">
   <table>
-    {{ range .Pages.ByPublishDate.Reverse }}
+    {{ range .Pages.ByLastmod.Reverse }}
     <tr>
       <td class="post-date-time date-time-font">
   	  <time>{{ .Date.Format (.Site.Params.datefrom | default "Jan 02 2006") }}</time>
